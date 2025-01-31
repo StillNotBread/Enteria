@@ -1,0 +1,59 @@
+[gd_scene load_steps=10 format=3 uid="uid://df12xoc5uknxc"]
+
+[ext_resource type="Theme" uid="uid://bbhj0pqw68l31" path="res://main_theme.tres" id="1_nw3mf"]
+[ext_resource type="Script" path="res://scenes/ui/stats_ui.gd" id="2_ywful"]
+[ext_resource type="Texture2D" uid="uid://sdfajxk4dc28" path="res://art/Progress bars/UnderPB.png" id="3_iebyd"]
+[ext_resource type="Texture2D" uid="uid://c81iyvxr0wqwd" path="res://art/dots (4).png" id="3_oogjs"]
+[ext_resource type="Texture2D" uid="uid://ddcxeh61xgsui" path="res://art/Progress bars/Other.png" id="4_a66de"]
+[ext_resource type="Texture2D" uid="uid://dar6i14je3apq" path="res://art/New Piskel-1.png (2).png" id="5_awt00"]
+[ext_resource type="Texture2D" uid="uid://s5l2djsinkpf" path="res://art/Progress bars/BlockOver.png" id="5_xv4lb"]
+[ext_resource type="Texture2D" uid="uid://cqs02glg3wer" path="res://art/dots (7).png" id="6_e5ttn"]
+[ext_resource type="Texture2D" uid="uid://cu7wdueyf7ubt" path="res://art/New Piskel-1.png (1).png" id="8_e2ms4"]
+
+[node name="StatsUI" type="VBoxContainer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.0
+offset_right = 48.0
+offset_bottom = 59.0
+grow_horizontal = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_nw3mf")
+alignment = 1
+script = ExtResource("2_ywful")
+
+[node name="Block" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="BlockImage" type="TextureRect" parent="Block"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("3_oogjs")
+stretch_mode = 3
+
+[node name="BlockProgress" type="TextureProgressBar" parent="Block"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+texture_under = ExtResource("3_iebyd")
+texture_over = ExtResource("5_awt00")
+texture_progress = ExtResource("4_a66de")
+
+[node name="Health" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="HealthImage" type="TextureRect" parent="Health"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+texture = ExtResource("6_e5ttn")
+stretch_mode = 3
+
+[node name="HealthProgress" type="TextureProgressBar" parent="Health"]
+unique_name_in_owner = true
+layout_mode = 2
+texture_under = ExtResource("3_iebyd")
+texture_over = ExtResource("8_e2ms4")
+texture_progress = ExtResource("5_xv4lb")

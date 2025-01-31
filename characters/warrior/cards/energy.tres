@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://bt00frhq8hckp"]
+
+[ext_resource type="Texture2D" uid="uid://c81iyvxr0wqwd" path="res://art/dots (4).png" id="1_ig85m"]
+[ext_resource type="Script" path="res://characters/warrior/cards/energy.gd" id="2_1dadp"]
+
+[resource]
+script = ExtResource("2_1dadp")
+id = "warrior_block"
+type = 1
+target = 0
+cost = 1
+name = "Power"
+icon = ExtResource("1_ig85m")
+tooltip_text = "[center]Gain [color=yellow]10[/color] energy.[/center]"

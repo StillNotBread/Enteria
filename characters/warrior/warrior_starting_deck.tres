@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="CardPile" load_steps=6 format=3 uid="uid://bdmylryrpmsf2"]
+
+[ext_resource type="Script" path="res://custom_resources/card.gd" id="1_csbgt"]
+[ext_resource type="Resource" uid="uid://cdug2hg3mud0q" path="res://characters/warrior/cards/cleanse.tres" id="2_gs6g7"]
+[ext_resource type="Script" path="res://custom_resources/card_pile.gd" id="2_p2mvc"]
+[ext_resource type="Resource" uid="uid://bt00frhq8hckp" path="res://characters/warrior/cards/energy.tres" id="3_uddly"]
+[ext_resource type="Resource" uid="uid://d2c0pd3aojxdq" path="res://characters/warrior/cards/power_surge.tres" id="4_m2b72"]
+
+[resource]
+script = ExtResource("2_p2mvc")
+cards = Array[ExtResource("1_csbgt")]([ExtResource("2_gs6g7"), ExtResource("2_gs6g7"), ExtResource("2_gs6g7"), ExtResource("2_gs6g7"), ExtResource("2_gs6g7"), ExtResource("3_uddly"), ExtResource("3_uddly"), ExtResource("3_uddly"), ExtResource("4_m2b72"), ExtResource("4_m2b72")])

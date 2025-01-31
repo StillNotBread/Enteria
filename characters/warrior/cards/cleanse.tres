@@ -1,0 +1,15 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://cdug2hg3mud0q"]
+
+[ext_resource type="Texture2D" uid="uid://demriyrm11cn0" path="res://art/dots(3).png" id="1_pg4jd"]
+[ext_resource type="Script" path="res://characters/warrior/cards/cleanse.gd" id="2_yqc6m"]
+
+[resource]
+script = ExtResource("2_yqc6m")
+id = "warrior_axe"
+type = 1
+target = 0
+cost = 1
+name = "Cleanse"
+icon = ExtResource("1_pg4jd")
+tooltip_text = "[center]Remove [color=green]10[/color] pollution.[/center]
+"

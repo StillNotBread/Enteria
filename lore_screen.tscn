@@ -1,0 +1,67 @@
+[gd_scene load_steps=7 format=3 uid="uid://b76e1r2b5eo3a"]
+
+[ext_resource type="Theme" uid="uid://bbhj0pqw68l31" path="res://main_theme.tres" id="1_s6hbu"]
+[ext_resource type="StyleBox" uid="uid://c1sox5w5ops66" path="res://info_stylebox.tres" id="2_8hmrk"]
+[ext_resource type="Script" path="res://info.gd" id="3_1m3xo"]
+[ext_resource type="Texture2D" uid="uid://bhvsdv3ndvvba" path="res://art/icon.png" id="4_kf4ln"]
+[ext_resource type="StyleBox" path="res://scenes/card_ui/card_hover_stylebox.tres" id="5_qqwla"]
+[ext_resource type="StyleBox" uid="uid://db4xge0pq3axf" path="res://scenes/card_ui/card_base_stylebox.tres" id="6_mp8lc"]
+
+[node name="LoreScreen" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_s6hbu")
+theme_override_styles/panel = ExtResource("2_8hmrk")
+script = ExtResource("3_1m3xo")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 250.0
+offset_bottom = 144.0
+theme = ExtResource("1_s6hbu")
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Lore" type="RichTextLabel" parent="MarginContainer"]
+layout_mode = 2
+theme = ExtResource("1_s6hbu")
+bbcode_enabled = true
+text = "
+[center]Welcome to Enteria[/center]
+
+ In the late 21st century, global disasters have been rampant. Coastlines flooded, heatwave winters, and awful air quality have plagued Earth for some time now. Nobody batted an eye until the flood of New Angeles, California in 2103. This tragedy sparked the world, causing the United Nations to form the Enteria, the Environmental Terrain Agency. The battle for humanity's survival begins now…"
+
+[node name="Sprite2D" type="Sprite2D" parent="MarginContainer"]
+position = Vector2(83, 11)
+scale = Vector2(0.045, 0.045)
+texture = ExtResource("4_kf4ln")
+
+[node name="Sprite2D2" type="Sprite2D" parent="MarginContainer"]
+position = Vector2(165, 11)
+scale = Vector2(0.045, 0.045)
+texture = ExtResource("4_kf4ln")
+
+[node name="PlayButton" type="Button" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -74.0
+offset_top = -28.0
+offset_right = -7.0
+offset_bottom = 3.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1, 0.68)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover_pressed = ExtResource("5_qqwla")
+theme_override_styles/normal = ExtResource("6_mp8lc")
+text = "PLAY"

@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://cvvurro71u7fs"]
+
+[ext_resource type="Theme" uid="uid://bbhj0pqw68l31" path="res://main_theme.tres" id="1_kvqj3"]
+[ext_resource type="Script" path="res://mana_ui.gd" id="2_1kq8l"]
+[ext_resource type="StyleBox" uid="uid://db4xge0pq3axf" path="res://scenes/card_ui/card_base_stylebox.tres" id="2_dhbai"]
+
+[node name="ManaUI" type="Panel"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 9.0
+offset_top = -28.0
+offset_right = 27.0
+offset_bottom = -10.0
+grow_vertical = 0
+theme = ExtResource("1_kvqj3")
+theme_override_styles/panel = ExtResource("2_dhbai")
+script = ExtResource("2_1kq8l")
+
+[node name="ManaLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "2/3"
+horizontal_alignment = 1
+vertical_alignment = 1

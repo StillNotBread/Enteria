@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://d2c0pd3aojxdq"]
+
+[ext_resource type="Texture2D" uid="uid://dfyybjn5tkaom" path="res://art/IMG_2629.PNG" id="1_e7w4n"]
+[ext_resource type="Script" path="res://characters/warrior/cards/power_surge.gd" id="2_sl7sp"]
+
+[resource]
+script = ExtResource("2_sl7sp")
+id = "power_surge"
+type = 1
+target = 0
+cost = 2
+name = "Power Surge"
+icon = ExtResource("1_e7w4n")
+tooltip_text = "[center]Gain [color=yellow]25[/color] energy[/center]
+[center]Gain [color=red]5[/color] pollution[/center]
+"
